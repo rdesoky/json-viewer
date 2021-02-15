@@ -1,0 +1,54 @@
+.objView, .endNode{
+	font-family: Consolas;
+	font-size:10pt;
+	line-height: 20px;
+	border-left:dotted 1px silver;
+	border-top:dotted 1px silver;
+}
+.objView>div{
+	margin-left:18px;
+}
+.objView>div, .objView[expand="1"] > .ellipses{
+	display: none;
+}
+.objView[expand="1"]>div{
+	display: inherit;
+}
+div.endNode:hover{
+	background-color:lightCyan;
+}
+.strVal, .val{
+	font-weight: bold;
+}
+.nullVal{
+	color:red;
+}
+.fncVal{
+	color:maroon;
+}
+.expander{
+	color:lightBlue;
+	display: inline-block;
+	cursor: default;
+}
+.nodeID{
+	color:gray;
+}
+.nodeID.expander{
+	background-image: url(images/plus.png);
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	padding-left:20px;
+}
+
+.objView[expand="1"]>.nodeID.expander{
+	background-image: url(images/minus.png);
+}
+
+.expander:hover{
+	background-color:khaki;
+}
+
+.ovError{
+	color:red;
+}
